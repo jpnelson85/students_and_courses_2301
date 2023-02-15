@@ -1,7 +1,7 @@
 class Gradebook
-  attr_reader   :instructor
-              
-  attr_accessor :courses
+  attr_reader   :instructor,
+                :courses
+  attr_accessor 
 
   def initialize(instructor)
     @instructor = instructor
