@@ -23,6 +23,16 @@ RSpec.describe Gradebook do
   end
 
   it 'create hash with key as Course and value as array of Student objects' do
-    
+    gradebook = Gradebook.new("Mr. Nelson")
+    course1 = Course.new("Calculus", 2)
+    list_students = ({Calculus: "Bob", Science: "Jim"})
+    expect(gradebook.list_all_students).to eq({Calculus: "Bob", Science: "Jim"})
+  end
+
+  it 'create an array of Student objects' do
+    student1 = Student.new({name: "Morgan", age: 21}) 
+    student2 = Student.new({name: "Jeff", age: 37}) 
+    student3 = Student.new({name: "Jill", age: 19}) 
+
   end
 end
