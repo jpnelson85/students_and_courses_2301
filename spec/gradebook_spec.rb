@@ -4,6 +4,6 @@ require './lib/course'
 
 RSpec.describe Gradebook do
   it 'exists' do
-    
+    gradebook = Gradebook.new("Mr. Nelson")
   end
 end
