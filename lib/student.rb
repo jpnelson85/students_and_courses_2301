@@ -14,8 +14,8 @@ class Student
     @scores << score
   end
 
-  def grade(scores)
-    average = scores.sum / scores.length
-    average
+  def average(scores)
+    ave = scores.sum.to_f / scores.size.to_f
+    ave
   end
 end
