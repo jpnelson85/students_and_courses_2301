@@ -30,9 +30,11 @@ RSpec.describe Gradebook do
   end
 
   it 'create an array of Student objects' do
+    gradebook = Gradebook.new("Mr. Nelson")
+    course1 = Course.new("Calculus", 2)
     student1 = Student.new({name: "Morgan", age: 21}) 
     student2 = Student.new({name: "Jeff", age: 37}) 
     student3 = Student.new({name: "Jill", age: 19}) 
-
+    expect(gradebook.students_below(threshold)).to eq(students_below)
   end
 end
