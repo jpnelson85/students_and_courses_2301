@@ -1,9 +1,10 @@
 class Student
-  attr_reader :name,
-              :age,
-              :scores
+  attr_reader   :name,
+                :age,
+                :scores
+  attr_accessor 
 
-  def initialize(info)
+  def initialize(info) 
     @name = info[:name]
     @age = info[:age]
     @scores = []
@@ -14,7 +15,7 @@ class Student
   end
 
   def grade(scores)
-    average = scores.sum / @scores.length
+    average = scores.sum / scores.length
     average
   end
 end
